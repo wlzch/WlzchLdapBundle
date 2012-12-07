@@ -1,0 +1,9 @@
+parameters:
+    wlzch.ldap.options: ~
+
+services:
+    wlzch.ldap.ldap:
+        class: Zend\Ldap\Ldap
+        arguments: 
+            - "%wlzch.ldap.options%"
+
